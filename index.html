@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="cs-cz">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    p {
+      margin-bottom: 2px;
+    }
+    .btn.btn-link.collapsed{
+    text-align: left !important;
+    }
+    .bigger {
+    font-size: 13px !important;
+    }
+    .border {
+    border: 1px solid black;
+    }
+    footer {
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    }
+    .autor {
+    margin-right: 20px;
+    color: grey;
+    text-align: right;
+    font-size: 11px;
+    margin-bottom: 2px !important;
+    }
+    .card-header:first-child {
+    border-radius: none;
+    }
+  </style>
+  <body>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">SL18 Learning Center</li>
+      </ol>
+    </nav>
+    <div class="accordion" id="accordionExample">
+    <!-- Collapse1 -->
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Jak nastavit kontrast a expozici kamery
+          </button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Kamera má někdy problém najít okraj pásu, pokud klikneme pravým tlačítkem myši na záznam kamery dostaneme se do nastavení, kde můžeme upravovat kontrast, expozici a pod.</p>
+          <img src="img/kamera/kamera1-min.jpg" class="img-fluid" alt="obrazek_kamery">
+        </div>
+      </div>
+    </div>
+    <!-- Collapse2 -->
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Jak správně řezat díry do tlustých a pevných materiálů
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Při řezání děr do tlustých a pevných materiálů vzniká riziko zlomení nože. Tento problém jednoduše řeší metoda score, která umožňuje do pásu zajet pouze částečně.</p>
+          <p><span class="badge badge-info">1</span> V CutEditoru klikneme na "Přidat nový krok zpracování"</p>
+          <p><span class="badge badge-info">2</span> Vybereme metodu score</p>
+          <p><span class="badge badge-info">3</span> Znovu klikneme na "Přidat nový krok zpracování" a vytvoříme také metodu thru-cut</p>
+          <img src="img/score/step1-min.jpg" class="img-fluid" alt="score_step_1">
+          <br>
+          <br>
+          <span class="bigger badge badge-warning">Ujistěte se, že metoda score je nad metodou thru-cut:</span><br>
+          <img src="img/score/kroky_zpracovani.jpg" class="img-fluid" alt="kroky_zpracovani">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">4</span> Rozklikneme nastavení metody score</p>
+          <p><span class="badge badge-info">5</span> Nastavíme hloubku nařezávání na 50%</p>
+          <img src="img/score/metoda_score-min.jpg" class="img-fluid" alt="metoda_score">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">6</span> Označíme objekt a pomocí CTRL+C/CTRL+V vytvoříme jeho kopii</p>
+          <p><span class="badge badge-info">7</span> K jedné kopii přiřadíme metodu score a ke druhé metodu thru-cut</p>
+          <img src="img/score/duplikace-min.jpg" class="img-fluid" alt="duplikace">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">8</span> Následně kopii označíme a překryjeme s ní originál, takže budou dva objekty na sobě</p>
+          <img src="img/score/prekryti-min.jpg" class="img-fluid" alt="prekryti">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">9</span> Jako poslední krok musíme nastavit finální prořez v metodě thru-cut (to už záleží řezaném materiálu)</p>
+          <img src="img/score/thrucutfinal-min.jpg" class="img-fluid" alt="thru-cut">
+          <hr>
+          <span class="bigger badge badge-pill badge-warning ">Finální výsledek bude vypadat tak, že nůž vytvoří nejdřív řez do poloviny tloušťky materiálu a druhý řez ho teprve kompletně prořízne. Nůž není pod takovým nátlakem a nehrozí jeho zalomení.</span>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse3 -->
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Jak předělat díru děrovákem na díru nožem
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>CutEditor zobrazuje díry děrovákem jako tečky. Jelikož toto CNC nedisponuje děrováky 6 a více je chytré naučit se změnit díry děrovákem na díry nožem.</p>
+          <p><span class="badge badge-info">1</span> V CutEditoru najdeme díru, která se zobrazuje jako tečka a označíme ji</p>
+          <img src="img/vytv_der/fotodira-min.jpg" class="border img-fluid" alt="vytv_der">
+          <hr>
+          <br> 
+          <p><span class="badge badge-info">2</span> Klikneme pravým tlačítkem myši a vybereme možnost "Číselná geometrie"</p>
+          <p><span class="badge badge-info">3</span> Zapíšeme si někam absolutní pozici tečky v tomto připádě X30 a Y30</p>
+          <img src="img/vytv_der/geometrie-min.jpg" class="border img-fluid" alt="geometrie">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">4</span> Vytvoříme kruh</p>
+          <p><span class="badge badge-info">5</span> Kruh označíme a vrátíme se do číselné geometrie</p>
+          <img src="img/vytv_der/kruh-min.jpg" class="border img-fluid" alt="kruh">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">6</span> Nastavíme pozici na střed</p>
+          <p><span class="badge badge-info">7</span> Kruhu nastavíme zapsanou absolutní pozici X a Y (pozici tečky, v tomto případě 30 a 30)</p>
+          <p><span class="badge badge-info">8</span> Kruhu nastavíme velikost X a velikost Y (na obrázku vytváření díry velikosti 10)</p>
+          <p><span class="badge badge-info">9</span> Tečku v neposlední řadě označíme a vymažeme protože ji už nepotřebujeme</p>
+          <img src="img/vytv_der/dirafinal-min.jpg" class="border img-fluid" alt="dirafinal"><br>
+          <span class="bigger badge badge-pill badge-warning ">Finální výsledek bude vypadat tak, že kruh bude ve středu tečky. Tzn. vytvoří díru na pozici kde má být.</span>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse4 -->
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          Jak ovlivnit, kde začne řez
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+        <div class="card-body">
+          <p><span class="badge badge-info">1</span> Vybereme možnost Nástroje > Přesun počátečního bodu</p>
+          <p><span class="badge badge-info">2</span> Myší klikneme na místo kde chceme aby řez započal</p>
+          <img src="img/presun_poc_bodu/presunpocbodu-min.jpg" class="border img-fluid" alt="presunpocbodu-min"><br>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse5 -->
+    <div class="card">
+      <div class="card-header" id="headingFive">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          Jak ovlivnit, kde zastaví rameno po dokončení úlohy
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+        <div class="card-body">
+          <p><span class="badge badge-info">1</span> Pravým tlačítkem myši klikneme na pracovní prostor a vybereme možnost "Parkovací pozice"</p>
+          <p><span class="badge badge-info">2</span> Vybereme pozici pro zaparkování (pozice 0/0 je pozice u stolu)</p>
+          <img src="img/park_poz/parkpoz-min.jpg" class="border img-fluid" alt="parkpoz-min"><br>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse6 -->
+    <div class="card">
+      <div class="card-header" id="headingSix">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+          Jak mezi kroky zpracování přidat pauzu
+          </button>
+        </h2>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+        <div class="card-body">
+          <p><span class="badge badge-info">1</span> Klikneme na ikonu "Přidat nový krok akce"</p>
+          <img src="img/novy_krok_akce/novykrokakce-min.jpg" class="border img-fluid" alt="novykrokakce-min">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">2</span> Vybereme akci "Pauza"</p>
+          <img src="img/novy_krok_akce/pauza-min.jpg" class="border img-fluid" alt="pauza-min">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">3</span> Pauzu zařadíme kam potřebujeme pomoci šipek</p>
+          <img src="img/novy_krok_akce/pauzain-min.jpg" class="border img-fluid" alt="pauzain-min">
+          <hr>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse7 -->
+    <div class="card">
+      <div class="card-header" id="headingSeven">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+          Jak postupovat, když potřebuji z obdelníku udělat čáry
+          </button>
+        </h2>
+      </div>
+      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Tento problém často nastává, když má role požadovanou šíři ale program je vytvořen tak, že se počítá i s říznutím šíře. Nůž by tedy zbytečně řezal kolem šíře pásu.</p>
+          <p><span class="badge badge-info">1</span> Obdelník označíme zmáčkneme pravé tlačítko myši a vybereme možnost "Rozložit kontury"</p>
+          <img src="img/rozl_kontur/rozlkontury-min.jpg" class="border img-fluid" alt="rozl_kontur"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">2</span> Nyní stačí pouze označit čáry, které nepotřebujeme a tlačítkem delete je vymazat</p>
+          <p><span class="badge badge-info">3</span> Všechny kontury lze zobrazit pomocí tlačítka "Zobrazit otevřené kontury"</p>
+          <img src="img/rozl_kontur/konturarozd.jpg" class="border img-fluid" alt="rozl_kontur"><br>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse8 -->
+    <div class="card">
+      <div class="card-header" id="headingEight">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+          Jak otestovat kvalitu díry nožem před spuštěním celého programu
+          </button>
+        </h2>
+      </div>
+      <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+        <div class="card-body">
+          <p><span class="badge badge-info">1</span> Jednu díru označíme</p>
+          <img src="img/test_der/ozndiry-min.jpg" class="border img-fluid" alt="ozndiry-min"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">2</span> Zmáčkneme mezerník</p>
+          <p><span class="badge badge-info">3</span> Pomoci CTRL+C a CTRL+V vytvoříme kopii díry</p>
+          <p><span class="badge badge-info">4</span> Kopii díry poté posuneme mimo objekt pomoci šipek na klávesnici</p>
+          <img src="img/test_der/kopie-min.jpg" class="border img-fluid" alt="kopie_diry"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">5</span> Kopii díry označíme a vytvoříme pro ni novou metodu</p>
+          <img src="img/test_der/novametoda-min.jpg" class="border img-fluid" alt="novametoda-min"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">6</span> Metodu pojmenujeme například "díratest"</p>
+          <img src="img/test_der/diratest-min.jpg" class="border img-fluid" alt="diratest"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">7</span> Celý objekt skryjeme pomoci tlačítka "skrýt" v tomto případě metoda thru-cut: tool1</p>
+          <img src="img/test_der/hide-min.jpg" class="border img-fluid" alt="objekthide"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">8</span> Nyní by měla být vidět na pracovní ploše pouze naše testovací díra</p>
+          <p><span class="badge badge-info">9</span> Díru označíme a tlačítkem Home na klávesnici jí pošleme na pozici 0/0</p>
+          <img src="img/test_der/dirapozice0.jpg" class="border img-fluid" alt="dirapozice0"><br>
+          <hr>
+          <br>
+          <p><span class="badge badge-info">10</span> Poté co skončíme s testováním stačí metodu testdira pouze skrýt a hlavní objekt naopak odkrýt</p>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse9 -->
+    <div class="card">
+      <div class="card-header" id="headingNine">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+          Jak ovlivnit délku posuvu
+          </button>
+        </h2>
+      </div>
+      <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Pokud vám posuv vychází do místa, kde bude například díra nebo prst je potřebné umět změnit pozici posuvu</p>
+          <p><span class="badge badge-info">1</span> Klikneme na ikonu "Upravit délku posuvu"</p>
+          <img src="img/delka_posuvu/delkaposuvu-min.jpg" class="border img-fluid" alt="delkaposuvu-min">
+          <hr>
+          <br>
+          <p><span class="badge badge-info">2</span> Myší najedeme na červenou přerušovanou čáru označující posuv a přetáhneme ji tam, kam zrovna potřebujeme</p>
+          <img src="img/delka_posuvu/delkaposuvucara.jpg" class="border img-fluid" alt="delkaposuvucara-min">
+        </div>
+      </div>
+    </div>
+    <!-- Collapse10 -->
+    <div class="card">
+      <div class="card-header" id="headingTen">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+          Jak obrátit směr řezu
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Při určitém směru řezu vzniká větší šance, že nůž pás nadzvedne a potáhne ho mimo řezací bod. Naštěstí lze velice jednoduše ovlivnut to jakým směrem bude nůž řezat</p>
+          <p><span class="badge badge-info">1</span> Klikneme na ikonu "Obrátit směr"</p>
+          <p><span class="badge badge-info">2</span> Myší klikneme na čáru u které chceme nastavit směr řezu</p>
+          <p><span class="badge badge-info">3</span> Zobrazí se růžové šipky, které nazančují jakým směrem nůž pojede, pokud klikneme znovu na čáru směr obrátíme</p>
+          <img src="img/obraceni_smeru/obratitsmer.jpg" class="border img-fluid" alt="obracenismeru-min">
+        </div>
+      </div>
+    </div>
+    <!-- Collapse11 -->
+    <div class="card">
+      <div class="card-header" id="headingEleven">
+        <h2 class="mb-0">
+          <button class="btn btn-link disabled" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+          Jak provést údržbu modulů a nástrojů
+          </button>
+        </h2>
+      </div>
+      <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Při určitém směru řezu vzniká větší šance, že nůž pás nadzvedne a potáhne ho mimo řezací bod. Naštěstí lze velice jednoduše ovlivnut to jakým směrem bude nůž řezat</p>
+          <p><span class="badge badge-info">1</span> Klikneme na ikonu "Obrátit směr"</p>
+          <p><span class="badge badge-info">2</span> Myší klikneme na čáru u které chceme nastavit směr řezu</p>
+          <p><span class="badge badge-info">3</span> Zobrazí se růžové šipky, které nazančují jakým směrem nůž pojede, pokud klikneme znovu na čáru směr obrátíme</p>
+          <img src="img/obraceni_smeru/obratitsmer.jpg" class="border img-fluid" alt="obracenismeru-min">
+        </div>
+      </div>
+    </div>
+    <!-- Collapse12 -->
+    <div class="card">
+      <div class="card-header" id="headingTwelve">
+        <h2 class="mb-0">
+          <button class="btn btn-link disabled" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+          Jak nastavit automatické navíjení pásu
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Při určitém směru řezu vzniká větší šance, že nůž pás nadzvedne a potáhne ho mimo řezací bod. Naštěstí lze velice jednoduše ovlivnut to jakým směrem bude nůž řezat</p>
+          <p><span class="badge badge-info">1</span> Klikneme na ikonu "Obrátit směr"</p>
+          <p><span class="badge badge-info">2</span> Myší klikneme na čáru u které chceme nastavit směr řezu</p>
+          <p><span class="badge badge-info">3</span> Zobrazí se růžové šipky, které nazančují jakým směrem nůž pojede, pokud klikneme znovu na čáru směr obrátíme</p>
+          <img src="img/obraceni_smeru/obratitsmer.jpg" class="border img-fluid" alt="obracenismeru-min">
+        </div>
+      </div>
+    </div>
+    <!-- Collapse13 -->
+    <div class="card">
+      <div class="card-header" id="headingThirteen">
+        <h2 class="mb-0">
+          <button class="btn btn-link disabled" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+          Jak nastavit sílu vakua
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Při určitém směru řezu vzniká větší šance, že nůž pás nadzvedne a potáhne ho mimo řezací bod. Naštěstí lze velice jednoduše ovlivnut to jakým směrem bude nůž řezat</p>
+          <p><span class="badge badge-info">1</span> Klikneme na ikonu "Obrátit směr"</p>
+          <p><span class="badge badge-info">2</span> Myší klikneme na čáru u které chceme nastavit směr řezu</p>
+          <p><span class="badge badge-info">3</span> Zobrazí se růžové šipky, které nazančují jakým směrem nůž pojede, pokud klikneme znovu na čáru směr obrátíme</p>
+          <img src="img/obraceni_smeru/obratitsmer.jpg" class="border img-fluid" alt="obracenismeru-min">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="fixed-bottom">
+      <p class="autor">Autoři: MAJI,DOJI & PEMA</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
